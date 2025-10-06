@@ -1,3 +1,0 @@
-/mnt/d/ImageCompare/build/CMakeFiles/ImageCompare.dir
-/mnt/d/ImageCompare/build/CMakeFiles/edit_cache.dir
-/mnt/d/ImageCompare/build/CMakeFiles/rebuild_cache.dir
