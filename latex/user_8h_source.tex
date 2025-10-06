@@ -1,0 +1,26 @@
+\doxysection{user.\+h}
+\hypertarget{user_8h_source}{}\label{user_8h_source}\index{include/user.h@{include/user.h}}
+\mbox{\hyperlink{user_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ USER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ USER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUserManager}{UserManager}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ \mbox{\hyperlink{classUserManager_a7e4a9e0eb96063c6ce4be4829e044957}{dbPath}};\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classUserManager_a450ad78085c4462f149023559d7876eb}{UserManager}}(\textcolor{keyword}{const}\ std::string\&\ path)\ :\ \mbox{\hyperlink{classUserManager_a7e4a9e0eb96063c6ce4be4829e044957}{dbPath}}(path)\ \{\}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserManager_a5a785dd51fbf376877015d0fb72a9513}{addUser}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ password,}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ role,\ \textcolor{keyword}{const}\ std::string\&\ imagePath);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classUserManager_ae7495c89288dcfc9c46238116584b372}{login}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ password,\ std::string\&\ role);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \ \ std::vector<unsigned\ char>\ \mbox{\hyperlink{classUserManager_a2ed79faada2696d38d6779a039af661e}{getUserImage}}(\textcolor{keyword}{const}\ std::string\&\ username);}
+\DoxyCodeLine{00050\ \};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

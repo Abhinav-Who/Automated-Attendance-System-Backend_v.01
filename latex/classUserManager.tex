@@ -1,0 +1,132 @@
+\doxysection{User\+Manager Class Reference}
+\hypertarget{classUserManager}{}\label{classUserManager}\index{UserManager@{UserManager}}
+
+
+Manages user accounts including creation, authentication, and image retrieval.  
+
+
+
+
+{\ttfamily \#include $<$user.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUserManager_a450ad78085c4462f149023559d7876eb}{User\+Manager}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classUserManager}{User\+Manager} with the specified database path. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserManager_a5a785dd51fbf376877015d0fb72a9513}{add\+User}} (const std\+::string \&username, const std\+::string \&password, const std\+::string \&role, const std\+::string \&image\+Path)
+\begin{DoxyCompactList}\small\item\em Adds a new user to the database. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUserManager_ae7495c89288dcfc9c46238116584b372}{login}} (const std\+::string \&username, const std\+::string \&password, std\+::string \&role)
+\begin{DoxyCompactList}\small\item\em Authenticates a user by verifying their username and password. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned char $>$ \mbox{\hyperlink{classUserManager_a2ed79faada2696d38d6779a039af661e}{get\+User\+Image}} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Retrieves the stored image of a user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classUserManager_a7e4a9e0eb96063c6ce4be4829e044957}{db\+Path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages user accounts including creation, authentication, and image retrieval. 
+
+The \doxylink{classUserManager}{User\+Manager} class interacts with a database to add users, verify login credentials, and fetch stored user images. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUserManager_a450ad78085c4462f149023559d7876eb}\label{classUserManager_a450ad78085c4462f149023559d7876eb} 
+\index{UserManager@{UserManager}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{UserManager()}{UserManager()}}
+{\footnotesize\ttfamily User\+Manager\+::\+User\+Manager (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a \doxylink{classUserManager}{User\+Manager} with the specified database path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the database containing user information. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUserManager_a5a785dd51fbf376877015d0fb72a9513}\label{classUserManager_a5a785dd51fbf376877015d0fb72a9513} 
+\index{UserManager@{UserManager}!addUser@{addUser}}
+\index{addUser@{addUser}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{addUser()}{addUser()}}
+{\footnotesize\ttfamily bool User\+Manager\+::add\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password,  }\item[{const std\+::string \&}]{role,  }\item[{const std\+::string \&}]{image\+Path }\end{DoxyParamCaption})}
+
+
+
+Adds a new user to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username for the new user. \\
+\hline
+{\em password} & The password for the new user. \\
+\hline
+{\em role} & The role of the user (e.\+g., "{}admin"{} or "{}user"{}). \\
+\hline
+{\em image\+Path} & Path to the user\textquotesingle{}s profile image. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the user was successfully added, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classUserManager_a2ed79faada2696d38d6779a039af661e}\label{classUserManager_a2ed79faada2696d38d6779a039af661e} 
+\index{UserManager@{UserManager}!getUserImage@{getUserImage}}
+\index{getUserImage@{getUserImage}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{getUserImage()}{getUserImage()}}
+{\footnotesize\ttfamily vector$<$ unsigned char $>$ User\+Manager\+::get\+User\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username }\end{DoxyParamCaption})}
+
+
+
+Retrieves the stored image of a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username whose image will be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of bytes representing the user\textquotesingle{}s image. 
+\end{DoxyReturn}
+\Hypertarget{classUserManager_ae7495c89288dcfc9c46238116584b372}\label{classUserManager_ae7495c89288dcfc9c46238116584b372} 
+\index{UserManager@{UserManager}!login@{login}}
+\index{login@{login}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily bool User\+Manager\+::login (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password,  }\item[{std\+::string \&}]{role }\end{DoxyParamCaption})}
+
+
+
+Authenticates a user by verifying their username and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The password provided for authentication. \\
+\hline
+{\em role} & Output parameter to store the user\textquotesingle{}s role if login is successful. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if login is successful, false otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classUserManager_a7e4a9e0eb96063c6ce4be4829e044957}\label{classUserManager_a7e4a9e0eb96063c6ce4be4829e044957} 
+\index{UserManager@{UserManager}!dbPath@{dbPath}}
+\index{dbPath@{dbPath}!UserManager@{UserManager}}
+\doxysubsubsection{\texorpdfstring{dbPath}{dbPath}}
+{\footnotesize\ttfamily std\+::string User\+Manager\+::db\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+Path to the database file storing user information. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{user_8h}{user.\+h}}\item 
+src/\mbox{\hyperlink{user_8cpp}{user.\+cpp}}\end{DoxyCompactItemize}

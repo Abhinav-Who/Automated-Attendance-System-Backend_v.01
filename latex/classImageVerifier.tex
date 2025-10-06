@@ -1,0 +1,84 @@
+\doxysection{Image\+Verifier Class Reference}
+\hypertarget{classImageVerifier}{}\label{classImageVerifier}\index{ImageVerifier@{ImageVerifier}}
+
+
+Provides functionality to verify user images by comparing them with stored images.  
+
+
+
+
+{\ttfamily \#include $<$image\+\_\+verifier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classImageVerifier_ae1b000461e1134e55212e5c307225950}{Image\+Verifier}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{classImageVerifier}{Image\+Verifier} with the specified database path. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classImageVerifier_abafe1de9625c2643914af1ab4efc050f}{compare\+With\+User\+Image}} (const std\+::string \&username, const std\+::string \&user\+Img\+Path)
+\begin{DoxyCompactList}\small\item\em Compares a user-\/provided image with the stored image of the specified username. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classImageVerifier_a52fd0ae9750e13ee406a9b8d7c6c20d1}{db\+Path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functionality to verify user images by comparing them with stored images. 
+
+The \doxylink{classImageVerifier}{Image\+Verifier} class interacts with a database to fetch stored images and compare them with user-\/provided images, returning a similarity score. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classImageVerifier_ae1b000461e1134e55212e5c307225950}\label{classImageVerifier_ae1b000461e1134e55212e5c307225950} 
+\index{ImageVerifier@{ImageVerifier}!ImageVerifier@{ImageVerifier}}
+\index{ImageVerifier@{ImageVerifier}!ImageVerifier@{ImageVerifier}}
+\doxysubsubsection{\texorpdfstring{ImageVerifier()}{ImageVerifier()}}
+{\footnotesize\ttfamily Image\+Verifier\+::\+Image\+Verifier (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an \doxylink{classImageVerifier}{Image\+Verifier} with the specified database path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to the database containing user images. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classImageVerifier_abafe1de9625c2643914af1ab4efc050f}\label{classImageVerifier_abafe1de9625c2643914af1ab4efc050f} 
+\index{ImageVerifier@{ImageVerifier}!compareWithUserImage@{compareWithUserImage}}
+\index{compareWithUserImage@{compareWithUserImage}!ImageVerifier@{ImageVerifier}}
+\doxysubsubsection{\texorpdfstring{compareWithUserImage()}{compareWithUserImage()}}
+{\footnotesize\ttfamily double Image\+Verifier\+::compare\+With\+User\+Image (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{user\+Img\+Path }\end{DoxyParamCaption})}
+
+
+
+Compares a user-\/provided image with the stored image of the specified username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username whose stored image will be used for comparison. \\
+\hline
+{\em user\+Img\+Path} & Path to the user-\/provided image file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A similarity score as a double, typically representing a percentage or confidence level. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classImageVerifier_a52fd0ae9750e13ee406a9b8d7c6c20d1}\label{classImageVerifier_a52fd0ae9750e13ee406a9b8d7c6c20d1} 
+\index{ImageVerifier@{ImageVerifier}!dbPath@{dbPath}}
+\index{dbPath@{dbPath}!ImageVerifier@{ImageVerifier}}
+\doxysubsubsection{\texorpdfstring{dbPath}{dbPath}}
+{\footnotesize\ttfamily std\+::string Image\+Verifier\+::db\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+Path to the database file containing user images. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{image__verifier_8h}{image\+\_\+verifier.\+h}}\item 
+src/\mbox{\hyperlink{image__verifier_8cpp}{image\+\_\+verifier.\+cpp}}\end{DoxyCompactItemize}

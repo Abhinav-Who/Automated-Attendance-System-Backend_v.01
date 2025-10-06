@@ -1,0 +1,74 @@
+\doxysection{App Class Reference}
+\hypertarget{classApp}{}\label{classApp}\index{App@{App}}
+
+
+Represents the main application that interacts with a database.  
+
+
+
+
+{\ttfamily \#include $<$app.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classApp_af6ddccbd1f2bab12ff11def5bc90ed11}{App}} (const std\+::string \&db)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{classApp}{App} with the specified database path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classApp_ae09dc71078b64c56c673b1ad1d25b5d1}{run}} ()
+\begin{DoxyCompactList}\small\item\em Starts the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classApp_ac5da42e0b5b9a5400700954cb7a5f2a4}{db\+Path}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the main application that interacts with a database. 
+
+The \doxylink{classApp}{App} class stores the path to a database and provides a method to run the application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classApp_af6ddccbd1f2bab12ff11def5bc90ed11}\label{classApp_af6ddccbd1f2bab12ff11def5bc90ed11} 
+\index{App@{App}!App@{App}}
+\index{App@{App}!App@{App}}
+\doxysubsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily App\+::\+App (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{db }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs an \doxylink{classApp}{App} with the specified database path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db} & The path to the database file. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classApp_ae09dc71078b64c56c673b1ad1d25b5d1}\label{classApp_ae09dc71078b64c56c673b1ad1d25b5d1} 
+\index{App@{App}!run@{run}}
+\index{run@{run}!App@{App}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void App\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the application. 
+
+This function contains the main logic to run the application. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classApp_ac5da42e0b5b9a5400700954cb7a5f2a4}\label{classApp_ac5da42e0b5b9a5400700954cb7a5f2a4} 
+\index{App@{App}!dbPath@{dbPath}}
+\index{dbPath@{dbPath}!App@{App}}
+\doxysubsubsection{\texorpdfstring{dbPath}{dbPath}}
+{\footnotesize\ttfamily std\+::string App\+::db\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+Path to the database file. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{app_8h}{app.\+h}}\item 
+src/\mbox{\hyperlink{app_8cpp}{app.\+cpp}}\end{DoxyCompactItemize}

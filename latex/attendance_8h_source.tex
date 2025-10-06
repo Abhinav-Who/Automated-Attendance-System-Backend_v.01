@@ -1,0 +1,31 @@
+\doxysection{attendance.\+h}
+\hypertarget{attendance_8h_source}{}\label{attendance_8h_source}\index{include/attendance.h@{include/attendance.h}}
+\mbox{\hyperlink{attendance_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ATTENDANCE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ATTENDANCE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structAttendanceRecord}{AttendanceRecord}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ \mbox{\hyperlink{structAttendanceRecord_abd9017610e785d06d94f3b95904e49cb}{username}};\ }
+\DoxyCodeLine{00013\ \ \ \ \ std::string\ \mbox{\hyperlink{structAttendanceRecord_acde285979e816a1afe6fa7ca1052b64f}{date}};\ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{structAttendanceRecord_a52ffa6407b87120cec705e04a33d11a7}{present}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAttendanceManager}{AttendanceManager}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{classAttendanceManager_a35a7df0edda17a6a0e9019e6d2588a8a}{dbPath}};\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classAttendanceManager_abf46f1c8e8238fb168f3eb70b7c0e824}{AttendanceManager}}(\textcolor{keyword}{const}\ std::string\&\ path)\ :\ \mbox{\hyperlink{classAttendanceManager_a35a7df0edda17a6a0e9019e6d2588a8a}{dbPath}}(path)\ \{\}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classAttendanceManager_a19c7c5397d962e008c14ecc95a7114f9}{markAttendance}}(\textcolor{keyword}{const}\ std::string\&\ username,\ \textcolor{keyword}{const}\ std::string\&\ date,\ \textcolor{keywordtype}{bool}\ present,\ \textcolor{keyword}{const}\ std::string\&\ role);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \ \ \ \ std::vector<AttendanceRecord>\ \mbox{\hyperlink{classAttendanceManager_a76f94b392979168503269947dab596bb}{viewAttendance}}(\textcolor{keyword}{const}\ std::string\&\ role,\ \textcolor{keyword}{const}\ std::string\&\ username);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classAttendanceManager_a339b173270b635e4b2100d1cfa1c5ada}{isValidDate}}(\textcolor{keyword}{const}\ std::string\&\ date);}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

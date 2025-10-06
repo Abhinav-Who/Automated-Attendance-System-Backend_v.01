@@ -1,0 +1,84 @@
+\doxysection{include/db.h File Reference}
+\hypertarget{db_8h}{}\label{db_8h}\index{include/db.h@{include/db.h}}
+
+
+Provides functions for database creation and table setup.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for db.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{db_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{db_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{db_8h_a4b54b0fcb45dab3f682ba8e9f0c8cdc7}{create\+DBIf\+Not\+Exists}} (const std\+::string \&db\+Path)
+\begin{DoxyCompactList}\small\item\em Creates the database file if it does not already exist. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{db_8h_aa9c582ada51146c8ac5e8d7c6d6a39d2}{create\+Users\+Table}} (const std\+::string \&db\+Path)
+\begin{DoxyCompactList}\small\item\em Creates the \textquotesingle{}users\textquotesingle{} table in the database. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{db_8h_a5960b8e9cc7c898f7aa1eaf2dc759b71}{create\+Attendance\+Table}} (const std\+::string \&db\+Path)
+\begin{DoxyCompactList}\small\item\em Creates the \textquotesingle{}attendance\textquotesingle{} table in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides functions for database creation and table setup. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{db_8h_a5960b8e9cc7c898f7aa1eaf2dc759b71}\label{db_8h_a5960b8e9cc7c898f7aa1eaf2dc759b71} 
+\index{db.h@{db.h}!createAttendanceTable@{createAttendanceTable}}
+\index{createAttendanceTable@{createAttendanceTable}!db.h@{db.h}}
+\doxysubsubsection{\texorpdfstring{createAttendanceTable()}{createAttendanceTable()}}
+{\footnotesize\ttfamily void create\+Attendance\+Table (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{db\+Path }\end{DoxyParamCaption})}
+
+
+
+Creates the \textquotesingle{}attendance\textquotesingle{} table in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Path} & Path to the database file where the table should be created. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{db_8h_a4b54b0fcb45dab3f682ba8e9f0c8cdc7}\label{db_8h_a4b54b0fcb45dab3f682ba8e9f0c8cdc7} 
+\index{db.h@{db.h}!createDBIfNotExists@{createDBIfNotExists}}
+\index{createDBIfNotExists@{createDBIfNotExists}!db.h@{db.h}}
+\doxysubsubsection{\texorpdfstring{createDBIfNotExists()}{createDBIfNotExists()}}
+{\footnotesize\ttfamily void create\+DBIf\+Not\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{db\+Path }\end{DoxyParamCaption})}
+
+
+
+Creates the database file if it does not already exist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Path} & Path to the database file to create. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{db_8h_aa9c582ada51146c8ac5e8d7c6d6a39d2}\label{db_8h_aa9c582ada51146c8ac5e8d7c6d6a39d2} 
+\index{db.h@{db.h}!createUsersTable@{createUsersTable}}
+\index{createUsersTable@{createUsersTable}!db.h@{db.h}}
+\doxysubsubsection{\texorpdfstring{createUsersTable()}{createUsersTable()}}
+{\footnotesize\ttfamily void create\+Users\+Table (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{db\+Path }\end{DoxyParamCaption})}
+
+
+
+Creates the \textquotesingle{}users\textquotesingle{} table in the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Path} & Path to the database file where the table should be created. \\
+\hline
+\end{DoxyParams}
