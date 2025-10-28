@@ -42,9 +42,10 @@ The idea is simple — teachers take a photo, the system compares faces with the
 
 ---
 
+```
+```
 ## 📁 Project Structure
 
-```
 
 Automated-Attendance-System-Backend_v.01/
 ├── src/             # Source code files (core logic)
@@ -188,3 +189,4 @@ This project is a small step toward bringing **AI-driven automation** to rural e
 
 Would you like me to also give you the exact commands to **add, commit, and push this README.md** to your GitHub repo right now?
 ```
+
